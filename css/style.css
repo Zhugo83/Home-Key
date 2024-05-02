@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+:root{
+    --sans:"Open Sans", sans-serif;
+    --black:#000;
+    --red:#f60303;
+    --white:#fff;
+    --grey:#c1c1c1;
+    --lightgrey:#f1f1f1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1440px;
+    margin:auto;
+}
+
+h1,h2{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+a{
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    color: var(--black);
+}
+
+a:hover{
+    color: var(--red);
+    transition: all 0.2s ease;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px 0px 15px;
+}
+
+header img{
+    width: 180px;
+    padding: 10px 0px 15px 0px;
+
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    padding: 51px 15px 0px 15px;
+    gap: 50px;
+}
+
+header nav ul li a{
+    color:var(--black);
+    font-family: var(--sans);
+}
+
+header nav ul li a:hover{
+    border-top: 1px var(--red) solid;
+    padding-top: 50px;
+}
+
+section:nth-child(1){
+    padding-left: 15px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-child(1) h1{
+    font-family: var(--sans);
+    margin-top: 40px;
+}
+
+section:nth-child(1) p{
+    font-family: var(--sans);
+}
+
+.fa-location-dot{
+    background-color: var(--red);
+    border-radius: 7px 0px 0px 7px;
+    padding: 6px 15px 6px 15px;
+}
+
+section:nth-child(1) form input{
+    border: 1px solid var(--grey);
+    padding: 6px 0px 6px 0px;
+    margin: -5px;
+    outline: none;
+}
+
+section:nth-child(1) form button{
+    border: 1px solid var(--grey);
+    border-radius: 0px 7px 7px 0px;
+    padding: 6px 15px 6px 15px;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+section:nth-child(1) article:nth-child(3){
+    display: flex;
+    align-items: center;
+    gap: 24px;
+} 
+
+section:nth-child(1) article a{
+    border: 1px solid var(--red);
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 22px 10px 22px;
+    transition: all 0.2s;
+    background-color: var(--white);
+} 
+
+section:nth-child(1) article i{
+    transition: all 0.2s;
+    color: var(--red);
+}
+
+section:nth-child(1) article a:hover i{
+    color: var(--white);
+    background:var(--red);
+    transition: all 0.2s;
+}
+
+section:nth-child(1) article a:hover{
+    color: var(--white);
+    background:var(--red);
+    transition: all 0.2s;
+}
+
+.fa-circle-info{
+    color: var(--red)
+}
+
+section:nth-child(2){
+    padding: 0px 15px 0px 15px;
+    gap: 40px;
+    display: flex;
+}
+
+section:nth-child(2) > div{
+    border-radius: 12px;
+    padding: 40px;
+    background-color: var(--lightgrey);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section:nth-child(2) > div > article{
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--lightgrey);
+    gap: 10px;
+}
+
+section:nth-child(2) > div > article > a > article{
+    max-width: 278px;
+    box-shadow: rgba(193, 193, 193, 1) 0px 7px 29px 0px;
+    border-radius: 12px 12px 12px 12px;
+    background-color: var(--white);
+    border: white solid;
+}
+
+section:nth-child(2) > div > article > a > article > img{
+    border-radius: 12px 12px 0px 0px;
+    height: 160px;
+    width: 100%;
+    object-fit: fill;
+}
+
+section:nth-child(2) > div > article > a > article > article > div:first-child{
+    padding: 0px 0px 0px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+section:nth-child(2) > div > article > a > article > article > div:last-child{
+    padding: 15px 0px 0px 8px;
+    color: var(--red);
+    display: flex;
+    gap: 6px;
+    font-size: 15px;
+    font-weight: 900px;
+    line-height: 15px;
+}
+
+section:nth-child(2) > div > article > a > article > article > div:last-child > i:last-child{
+    color: var(--grey);
+}
+/* section:nth-child(2){
+    padding:0px 15px 0px 15px; 
+    gap:40px;
+}
+
+section:nth-child(2) div{
+    background-color: #F1F1F1; 
+    gap: 13px;
+    max-width: max-content;
+}
+
+section:nth-child(2) div > article > div{
+    gap: 40px; 
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section:nth-child(2) div > article > div > a{
+    flex:1;
+}
+
+section:nth-child(2) div > article > div > a > article{
+    box-shadow: 2px 2px 2px 1px var(--white);
+    border-radius: 12px;
+    border: white solid;
+    max-width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section:nth-child(2) div > article > div > a > article > img{
+    border-radius: 12px 12px 0px 0px;
+} */
+
+section:nth-child(3){
+    padding: 0px 15px 0px 15px;
+    gap: 40px;
+}
+
+section:nth-child(3) > article{
+    padding: 0px 15px 0px 15px;
+    gap: 40px;
+}
+
+section:nth-child(3) > article > a{
+    padding: 0px 0px 12px 0px;
+    box-shadow: 2px 2px 2px 2px var(--black);
+    border-radius: 12px;
+}
+
+footer p{
+    text-align: center;
+    margin: 20px;
+}
+
+footer div{
+    display: flex;
+    background-color: var(--lightgrey);
+    border-radius: 12px 12px 0px 0px;
+    padding: 40px;
+    margin: 20px;
+}
+
+footer article{
+    flex: 1;
+}
+
+footer ul{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer h2{
+    margin-bottom: 20px;
+    font-size:18px;
+}
+
+
+footer a:hover{
+    color: var(--red);
+    transition: all 0.3s;
+}
