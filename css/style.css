@@ -176,19 +176,35 @@ section:nth-child(2) > div > article{
     gap: 10px;
 }
 
-section:nth-child(2) > div > article > a > article{
-    max-width: 278px;
+section:nth-child(2) > div > article > a{
+    flex: 1 0 30%;
     box-shadow: rgba(193, 193, 193, 1) 0px 7px 29px 0px;
     border-radius: 12px 12px 12px 12px;
     background-color: var(--white);
     border: white solid;
 }
 
+section:nth-child(2) > div > article > a > article{
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 4px;
+    position: relative;
+    box-shadow: 0px 2px 15px var(--grey);
+    overflow: hidden;
+}
+
 section:nth-child(2) > div > article > a > article > img{
     border-radius: 12px 12px 0px 0px;
-    height: 160px;
     width: 100%;
-    object-fit: fill;
+    height: 160px;
+    object-fit: cover;
+    transition:all 0.2s ease-in-out;
+}
+
+section:nth-child(2) > div > article > a > article > img:hover{
+    transform:scale(1.02);
+    filter: grayscale();
+    transition:all 0.2s ease-in-out;
 }
 
 section:nth-child(2) > div > article > a > article > article > div:first-child{
@@ -211,55 +227,43 @@ section:nth-child(2) > div > article > a > article > article > div:last-child{
 section:nth-child(2) > div > article > a > article > article > div:last-child > i:last-child{
     color: var(--grey);
 }
-/* section:nth-child(2){
-    padding:0px 15px 0px 15px; 
-    gap:40px;
-}
-
-section:nth-child(2) div{
-    background-color: #F1F1F1; 
-    gap: 13px;
-    max-width: max-content;
-}
-
-section:nth-child(2) div > article > div{
-    gap: 40px; 
-    padding: 40px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section:nth-child(2) div > article > div > a{
-    flex:1;
-}
-
-section:nth-child(2) div > article > div > a > article{
-    box-shadow: 2px 2px 2px 1px var(--white);
-    border-radius: 12px;
-    border: white solid;
-    max-width: 240px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section:nth-child(2) div > article > div > a > article > img{
-    border-radius: 12px 12px 0px 0px;
-} */
 
 section:nth-child(3){
+    display: flex;
+    flex-direction: column;
     padding: 0px 15px 0px 15px;
     gap: 40px;
 }
 
 section:nth-child(3) > article{
-    padding: 0px 15px 0px 15px;
+    display: flex;
     gap: 40px;
 }
 
 section:nth-child(3) > article > a{
     padding: 0px 0px 12px 0px;
-    box-shadow: 2px 2px 2px 2px var(--black);
     border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 100px 0px;
+    color: var(--white);
+    flex:1 0 20%;
+}
+
+section:nth-child(3) > article > a > article{
+    gap: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-child(3) > article > a > article > img{
+    height: 380px;
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px 12px 0px 0px;
+}
+
+section:nth-child(3) > article > a > article > h3{
+    text-align: center;
 }
 
 footer p{
