@@ -234,7 +234,7 @@ section:nth-child(2) .recommended::after{
     transition:all 0.2s ease-in-out;
 }
 
-#Accomodations-list > div > a > article > div:first-child{
+#Accomodations-list > div > a > article > div{
     padding: 0px 0px 0px 8px;
     display: flex;
     flex-direction: column;
@@ -245,6 +245,7 @@ section:nth-child(2) .recommended::after{
     padding: 15px 0px 0px 8px;
     color: var(--red);
     display: flex;
+    flex-direction: row;
     gap: 6px;
     font-size: 15px;
     line-height: 15px;
@@ -326,7 +327,7 @@ section:nth-child(2) > aside > a > div > article{
     flex-direction: column;
 }
 
-section:nth-child(2) > aside > a > div > article > h3
+section:nth-child(2) > aside > a > div > article > h3,
 section:nth-child(2) > aside > a > div > article > p{
     padding: 0px 0px 0px 8px;
 }
@@ -476,6 +477,9 @@ footer a:hover{
     }
     section:nth-child(3) > div > a{
         flex:1 0 100%;
+    }
+    #Accomodations-list > div > a {
+        flex: 1 0 100%;
     }
     footer div {
         flex-direction: column;
